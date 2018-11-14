@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <script type="application/javascript" src="../Script/jquery.js"></script>
+    <script type="application/javascript" src="../Script/indexController.js"></script>
+    <script type="application/javascript" src="../Script/indexStyleController.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Styles/indexStyle.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/indexStyle-footer.css">
+</head>
+<body>
+    <!--<button id="fetchButton">Fetch</button>-->
+    <button id="buttonLogin">Login</button>
+    Filter
+    <form action="" method="get" id="filter-form">
+        <input type="text" name="searchTxt" id="searchTxt"><br>
+    </form>
+
+    <div id="playlist">
+        <div id="playlist-header">
+            <div class="playlist-header-contents">Id</div>
+            <div class="playlist-header-contents">Name</div>
+            <div class="playlist-header-contents">Path</div>
+            <div class="playlist-header-contents"></div>
+        </div>
+        <div id="playlist-body">
+            <!--<div class="playlist-body-content">-->
+                <!--<div class="playlist-body-content-contents">Id1</div>-->
+                <!--<div class="playlist-body-content-contents"><span class="yellow-span">Name1</span></div>-->
+                <!--<div class="playlist-body-content-contents">Path1</div>-->
+                <!--<div class="playlist-body-content-contents"><div class="play-div"></div></div>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+    <div id="full-screen-div">
+
+    </div>
+    <div id="login-form">
+        <span>Login</span><br>
+        <form action="">
+            <input type="text" id="nameTxt" placeholder="Username or Email"><br>
+            <input type="password" id="passwordTxt" placeholder="Password"><br>
+            <div id="errorDiv"></div>
+            <input type="submit" value="Login">
+        </form>
+
+        <!--<button>Forget Password</button>-->
+    </div>
+
+    <div id="foot-bar">
+        <div id="stop-div"></div>
+    </div>
+
+
+</body>
+</html>
