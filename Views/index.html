@@ -8,6 +8,10 @@
     <script type="application/javascript" src="../Script/indexStyleController.js"></script>
     <link rel="stylesheet" type="text/css" href="../Styles/indexStyle.css">
     <link rel="stylesheet" type="text/css" href="../Styles/indexStyle-footer.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/ice-music.css">
+    <!--<link rel="stylesheet" href="css/reset.css" />-->
+    <!--<link rel="stylesheet" href="css/demo.css" />-->
+    <link rel="stylesheet" href="css/audioplayer.css" />
 </head>
 <body>
     <!--<button id="fetchButton">Fetch</button>-->
@@ -50,9 +54,19 @@
     </div>
 
     <div id="foot-bar">
-        <div id="stop-div"></div>
+        <div id="stop-div" class="inliner"></div>
+        <div id="wrapper" class="inliner">
+            <audio preload="auto" controls id="myAudio">
+                <source src="../Public/Songs/1.mp3">
+            </audio>
+            <script src="js/audioplayer.js"></script>
+            <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+        </div>
     </div>
-
+    <!--<audio id="myAudio">-->
+        <!--<source src="../Public/Songs/1.mp3" type="audio/mpeg">-->
+        <!--Your browser does not support the audio element.-->
+    <!--</audio>-->
 
 </body>
 </html>

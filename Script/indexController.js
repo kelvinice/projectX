@@ -1,4 +1,5 @@
 $(function () {
+
     function fetchData(test){
         //console.log(test);
 
@@ -36,7 +37,7 @@ $(function () {
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
                             '<div class="playlist-body-content-contents">'+path+'</div>'+
-                            '<div class="playlist-body-content-contents"><div class="play-div"></div></div>'+
+                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["id"]+'"></div></div>'+
                             "</div>"
                         );
                     }
@@ -46,7 +47,7 @@ $(function () {
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
                             '<div class="playlist-body-content-contents">'+path+'</div>'+
-                            '<div class="playlist-body-content-contents"><div class="play-div"></div></div>'+
+                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["id"]+'"></div></div>'+
                             "</div>"
                         );
                     }else{
@@ -55,7 +56,7 @@ $(function () {
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
                             '<div class="playlist-body-content-contents">'+path+'</div>'+
-                            '<div class="playlist-body-content-contents"><div class="play-div"></div></div>'+
+                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["id"]+'"></div></div>'+
                             "</div>"
                         );
                     }
@@ -64,8 +65,11 @@ $(function () {
                 }
                 offset++;
                 loadImg.remove();
-                $(".play-div").click(function () {
+                $(".play-div").click(function (event) {
                     $("#foot-bar").animate({bottom: "0%"}, "fast");
+                    audio = $("#myAudio")[0];
+                    audio.src = "../Public/Songs/"+$(event.target).attr('value')+".mp3";
+                    audio.play();
                 });
             }
         );
@@ -73,6 +77,13 @@ $(function () {
     };
 
     $("#fetchButton").click(()=> fetchData(offset));
+
+    $("#stop-div").click(function () {
+        $("#foot-bar").animate({bottom: "-10%"}, "fast");
+        audio = $("#myAudio")[0];
+        audio.currentTime = 0;
+        audio.pause();
+    });
 
     $("#searchTxt").keyup(function () {
         searchKey = $("#searchTxt").val();
@@ -92,13 +103,12 @@ $(function () {
     $("#filter-form").submit(function (e) {
         e.preventDefault();
         searchKey = $("#searchTxt").val();
-        // $("#playlist-body").html("");
+        $("#playlist-body").html("");
         offset=0;
         fetchData(offset);
     });
 
     $("#buttonLogin").click(function () {
-        //alert("a");
         $("#full-screen-div").css("display","block");
         $("#login-form").css("display","block");
     });
@@ -108,7 +118,7 @@ $(function () {
         $("#login-form").css("display","none");
         $("#nameTxt").val("");
         $("#passwordTxt").val("");
-        // $("#errorDiv").html("");
+        $("#errorDiv").html("");
     });
 
     $("#login-form").submit(function (e) {
@@ -126,10 +136,10 @@ $(function () {
         }
     });
 
-
 });
 
 var searchKey="";
 var offset=0;
 var iteratorToogle=true;
 var isFirst=true;
+var audio;

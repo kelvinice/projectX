@@ -19,7 +19,7 @@
 }
 
 #stop-div{
-    width: auto;
+    width: 100%;
     height: 80%;
     max-width: 60px;
     background-image: url("../Public/Images/stop.png");
@@ -36,5 +36,9 @@
 
 .gray-ground{
     background-color: darkcyan;
+}
+
+.inliner{
+    display: inline-block;
 }
 
