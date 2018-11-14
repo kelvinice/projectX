@@ -18,7 +18,7 @@ $(function () {
         ajaxGetSong.done(
             function (result) {
                 var tempHasil = JSON.parse(result);
-
+                if(tempHasil.length==0 && isFirst)$("#playlist-body").html(""); //barbar
                 for(var i=0;i<tempHasil.length;i++){
                     var name = tempHasil[i]["name"];
                     var n = name.search(searchKey);
@@ -30,7 +30,17 @@ $(function () {
                     if(n!=-1 && searchKey != ''){
                         path = path.substring(0, n)+'<span class="yellow-span">'+searchKey+'</span>'+path.substring(n+searchKey.length, path.length);
                     }
-                    if(iteratorToogle){
+                    if(isFirst){
+                        $("#playlist-body").html(
+                            '<div class="playlist-body-content black-ground">'+
+                            '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
+                            '<div class="playlist-body-content-contents">'+name+'</div>'+
+                            '<div class="playlist-body-content-contents">'+path+'</div>'+
+                            '<div class="playlist-body-content-contents"><div class="play-div"></div></div>'+
+                            "</div>"
+                        );
+                    }
+                    else if(iteratorToogle){
                         $("#playlist-body").append(
                             '<div class="playlist-body-content black-ground">'+
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
@@ -50,6 +60,7 @@ $(function () {
                         );
                     }
                     iteratorToogle=!iteratorToogle;
+                    isFirst=false;
                 }
                 offset++;
                 loadImg.remove();
@@ -61,15 +72,14 @@ $(function () {
 
     };
 
-
-
     $("#fetchButton").click(()=> fetchData(offset));
 
     $("#searchTxt").keyup(function () {
         searchKey = $("#searchTxt").val();
-        $("#playlist-body").html("");
+        //$("#playlist-body").html(""); //tersangka
         offset=0;
         fetchData(offset);
+        isFirst = true;
     });
 
     $(window).scroll(function() {
@@ -82,7 +92,7 @@ $(function () {
     $("#filter-form").submit(function (e) {
         e.preventDefault();
         searchKey = $("#searchTxt").val();
-        $("#playlist-body").html("");
+        // $("#playlist-body").html("");
         offset=0;
         fetchData(offset);
     });
@@ -98,7 +108,7 @@ $(function () {
         $("#login-form").css("display","none");
         $("#nameTxt").val("");
         $("#passwordTxt").val("");
-        $("#errorDiv").html("");
+        // $("#errorDiv").html("");
     });
 
     $("#login-form").submit(function (e) {
@@ -122,3 +132,4 @@ $(function () {
 var searchKey="";
 var offset=0;
 var iteratorToogle=true;
+var isFirst=true;
