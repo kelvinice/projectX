@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2018 at 09:50 AM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 7.0.30
+-- Waktu pembuatan: 15 Nov 2018 pada 15.45
+-- Versi server: 10.1.31-MariaDB
+-- Versi PHP: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `musics`
+-- Struktur dari tabel `musics`
 --
 
 CREATE TABLE `musics` (
@@ -35,12 +35,12 @@ CREATE TABLE `musics` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `musics`
+-- Dumping data untuk tabel `musics`
 --
 
 INSERT INTO `musics` (`id`, `name`, `path`) VALUES
-(1, 'test1', 'test1'),
-(2, 'test2', 'test2'),
+(1, 'Migikata', '.mp3'),
+(2, 'Altale', '.mp3'),
 (3, 'i cant get no satisfaction', 'the rolling stones'),
 (4, 'you were on my mind', 'we five'),
 (5, 'youve lost that lovin feelin', 'the righteous brothers'),
@@ -145,17 +145,17 @@ INSERT INTO `musics` (`id`, `name`, `path`) VALUES
 --
 
 --
--- Indexes for table `musics`
+-- Indeks untuk tabel `musics`
 --
 ALTER TABLE `musics`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `musics`
+-- AUTO_INCREMENT untuk tabel `musics`
 --
 ALTER TABLE `musics`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
