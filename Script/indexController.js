@@ -87,10 +87,10 @@ $(function () {
 
     $("#searchTxt").keyup(function () {
         searchKey = $("#searchTxt").val();
-        //$("#playlist-body").html(""); //tersangka
         offset=0;
-        fetchData(offset);
         isFirst = true;
+        iteratorToogle = true;
+        fetchData(offset);
     });
 
     $(window).scroll(function() {
