@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Nov 2018 pada 15.45
+-- Waktu pembuatan: 16 Nov 2018 pada 18.25
 -- Versi server: 10.1.31-MariaDB
 -- Versi PHP: 7.2.4
 
@@ -39,8 +39,8 @@ CREATE TABLE `musics` (
 --
 
 INSERT INTO `musics` (`id`, `name`, `path`) VALUES
-(1, 'Migikata', '.mp3'),
-(2, 'Altale', '.mp3'),
+(1, 'Migikata', '7868eb88-5c8b-47b5-af00-aca1d174e232.mp3'),
+(2, 'Altale', '19bcff92-2181-4662-8a80-63b809be32c7.mp3'),
 (3, 'i cant get no satisfaction', 'the rolling stones'),
 (4, 'you were on my mind', 'we five'),
 (5, 'youve lost that lovin feelin', 'the righteous brothers'),
@@ -140,6 +140,19 @@ INSERT INTO `musics` (`id`, `name`, `path`) VALUES
 (99, 'keep searchin well follow the sun', 'del shannon'),
 (100, 'how sweet it is to be loved by you', 'marvin gaye');
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
@@ -151,6 +164,12 @@ ALTER TABLE `musics`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -159,6 +178,12 @@ ALTER TABLE `musics`
 --
 ALTER TABLE `musics`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
+--
+-- AUTO_INCREMENT untuk tabel `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

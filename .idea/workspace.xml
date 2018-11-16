@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22e08891-3b71-4bf0-85ae-68c489a692f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/musics.sql" beforeDir="false" />
+    <list default="true" id="22e08891-3b71-4bf0-85ae-68c489a692f7" name="Default Changelist" comment="baru mau login">
+      <change afterPath="$PROJECT_DIR$/Api/insertSong.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Public/Songs/19bcff92-2181-4662-8a80-63b809be32c7.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Public/Songs/7868eb88-5c8b-47b5-af00-aca1d174e232.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Script/loginController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/doLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/doLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/getSongs.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/getSongs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Public/Songs/1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Public/Songs/2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/indexController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script/indexStyleController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/indexStyleController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/indexStyle-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/indexStyle-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicdb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/musicdb.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,39 +70,48 @@
     <session id="-1316986099">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="200" />
-          <entry key="html" value="175" />
-          <entry key="js" value="649" />
-          <entry key="txt" value="86" />
+          <entry key="css" value="235" />
+          <entry key="html" value="180" />
+          <entry key="js" value="928" />
+          <entry key="php" value="262" />
+          <entry key="txt" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="200" />
-          <entry key="HTML" value="175" />
-          <entry key="JavaScript" value="649" />
-          <entry key="PLAIN_TEXT" value="86" />
+          <entry key="CSS" value="235" />
+          <entry key="HTML" value="180" />
+          <entry key="JavaScript" value="928" />
+          <entry key="PHP" value="262" />
+          <entry key="PLAIN_TEXT" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
+          <entry key="html" value="1" />
+          <entry key="js" value="4" />
+          <entry key="php" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PHP" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -139,60 +161,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Styles/indexStyle.css">
+        <entry file="file://$PROJECT_DIR$/Api/doLogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+            <state relative-caret-position="34">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/doLogin.php">
+        <entry file="file://$PROJECT_DIR$/Script/loginController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="391">
+              <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Views/index.html">
+        <entry file="file://$PROJECT_DIR$/Script/indexController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+            <state relative-caret-position="251">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Styles/indexStyle-footer.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Styles/ice-music.css">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Script/indexStyleController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Script/indexController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-417">
-              <caret line="100" column="22" lean-forward="true" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+            <state relative-caret-position="153">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -213,6 +221,7 @@
       <find>bla</find>
       <find>r</find>
       <find>$(&quot;#errorDiv&quot;).html(&quot;&quot;);</find>
+      <find>button</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -232,14 +241,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Api/getSongs.php" />
-        <option value="$PROJECT_DIR$/Api/doLogin.php" />
         <option value="$PROJECT_DIR$/Styles/indexStyle.css" />
-        <option value="$PROJECT_DIR$/Script/indexStyleController.js" />
-        <option value="$PROJECT_DIR$/Script/indexController.js" />
-        <option value="$PROJECT_DIR$/Styles/indexStyle-footer.css" />
-        <option value="$PROJECT_DIR$/Views/index.html" />
         <option value="$PROJECT_DIR$/Styles/ice-music.css" />
+        <option value="$PROJECT_DIR$/Styles/indexStyle-footer.css" />
+        <option value="$PROJECT_DIR$/Api/insertSong.php" />
+        <option value="$PROJECT_DIR$/Views/index.html" />
+        <option value="$PROJECT_DIR$/Api/getSongs.php" />
+        <option value="$PROJECT_DIR$/Script/indexStyleController.js" />
+        <option value="$PROJECT_DIR$/Script/loginController.js" />
+        <option value="$PROJECT_DIR$/Api/doLogin.php" />
+        <option value="$PROJECT_DIR$/Script/indexController.js" />
       </list>
     </option>
   </component>
@@ -254,6 +265,9 @@
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -271,7 +285,17 @@
             <path>
               <item name="ProjectX" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectX" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectX" type="462c0819:PsiDirectoryNode" />
               <item name="Public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectX" type="462c0819:PsiDirectoryNode" />
+              <item name="Script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectX" type="b2602c69:ProjectViewProjectNode" />
@@ -297,6 +321,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ProjectX\Script" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -339,7 +368,8 @@
       <workItem from="1542204467968" duration="385000" />
       <workItem from="1542206288312" duration="2071000" />
       <workItem from="1542210130925" duration="4698000" />
-      <workItem from="1542292804928" duration="508000" />
+      <workItem from="1542292804928" duration="4483000" />
+      <workItem from="1542384341598" duration="4907000" />
     </task>
     <task id="LOCAL-00002" summary="coba">
       <created>1541953828787</created>
@@ -432,17 +462,24 @@
       <option name="project" value="LOCAL" />
       <updated>1542293054797</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="prepared statement fetch data">
+      <created>1542298091467</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1542298091467</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44048000" />
+    <option name="totallyTimeSpent" value="52930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2636103" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26719198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -456,8 +493,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928367" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49713466" weight="0.32974428" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007163" side_tool="true" visible="true" weight="0.32974428" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49928367" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50143266" side_tool="true" visible="true" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49856734" visible="true" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -485,7 +522,9 @@
     <MESSAGE value="hina" />
     <MESSAGE value="wtfs232132" />
     <MESSAGE value="wtfzzzz12" />
-    <option name="LAST_COMMIT_MESSAGE" value="wtfzzzz12" />
+    <MESSAGE value="prepared statement fetch data" />
+    <MESSAGE value="baru mau login" />
+    <option name="LAST_COMMIT_MESSAGE" value="baru mau login" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
@@ -498,58 +537,70 @@
     <entry file="file://$PROJECT_DIR$/Script/jquery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/getSongs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/css/demo.css" />
     <entry file="file://$PROJECT_DIR$/Styles/ice-music.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Script/indexStyleController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Script/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
-          <caret line="100" column="22" lean-forward="true" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Styles/indexStyle-footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="1632">
+          <caret line="96" column="24" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/doLogin.php">
+    <entry file="file://$PROJECT_DIR$/Api/insertSong.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="272">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/getSongs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Styles/indexStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Script/indexStyleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+        <state relative-caret-position="153">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Script/loginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/doLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Script/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
         </state>
       </provider>
     </entry>

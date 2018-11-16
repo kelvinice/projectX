@@ -7,10 +7,8 @@
  */
 
 $con = new mysqli('localhost','root','','musicdb');
-$offset = $_POST['data1'];
+$offset = $_POST['data1']*10;
 $searchKey = $_POST['data2'];
-
-$query = "SELECT * FROM musics WHERE name like ? or path like ? LIMIT ? ,10";
 
 $stmt = $con->prepare("SELECT * FROM musics WHERE name like ? or path like ? LIMIT ? ,10");
 $temp = '%'.$searchKey.'%';

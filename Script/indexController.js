@@ -27,7 +27,8 @@ $(function () {
                         name = name.substring(0, n)+'<span class="yellow-span">'+searchKey+'</span>'+name.substring(n+searchKey.length, name.length);
                     }
                     var path = tempHasil[i]["path"];
-                    var n = path.search(searchKey);
+                    n = path.search(searchKey);
+
                     if(n!=-1 && searchKey != ''){
                         path = path.substring(0, n)+'<span class="yellow-span">'+searchKey+'</span>'+path.substring(n+searchKey.length, path.length);
                     }
@@ -37,7 +38,7 @@ $(function () {
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
                             '<div class="playlist-body-content-contents">'+path+'</div>'+
-                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["id"]+'"></div></div>'+
+                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["path"]+'"></div></div>'+
                             "</div>"
                         );
                     }
@@ -47,7 +48,7 @@ $(function () {
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
                             '<div class="playlist-body-content-contents">'+path+'</div>'+
-                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["id"]+'"></div></div>'+
+                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["path"]+'"></div></div>'+
                             "</div>"
                         );
                     }else{
@@ -56,7 +57,7 @@ $(function () {
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
                             '<div class="playlist-body-content-contents">'+path+'</div>'+
-                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["id"]+'"></div></div>'+
+                            '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["path"]+'"></div></div>'+
                             "</div>"
                         );
                     }
@@ -68,7 +69,7 @@ $(function () {
                 $(".play-div").click(function (event) {
                     $("#foot-bar").animate({bottom: "0%"}, "fast");
                     audio = $("#myAudio")[0];
-                    audio.src = "../Public/Songs/"+$(event.target).attr('value')+".mp3";
+                    audio.src = "../Public/Songs/"+$(event.target).attr('value');
                     audio.play();
                 });
             }
@@ -106,34 +107,6 @@ $(function () {
         $("#playlist-body").html("");
         offset=0;
         fetchData(offset);
-    });
-
-    $("#buttonLogin").click(function () {
-        $("#full-screen-div").css("display","block");
-        $("#login-form").css("display","block");
-    });
-
-    $("#full-screen-div").click(function () {
-        $("#full-screen-div").css("display","none");
-        $("#login-form").css("display","none");
-        $("#nameTxt").val("");
-        $("#passwordTxt").val("");
-        $("#errorDiv").html("");
-    });
-
-    $("#login-form").submit(function (e) {
-        e.preventDefault();
-
-        var username = $("#nameTxt").val();
-        var password = $("#passwordTxt").val();
-        if(username == "" || username == null){
-            $("#errorDiv").html("Username Must be filled");
-        }else if(password == "" || password == null){
-            $("#errorDiv").html("Password Must be filled");
-        }else{
-            $("#errorDiv").html("Loggin in...");
-
-        }
     });
 
 });

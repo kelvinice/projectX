@@ -6,6 +6,7 @@
     <script type="application/javascript" src="../Script/jquery.js"></script>
     <script type="application/javascript" src="../Script/indexController.js"></script>
     <script type="application/javascript" src="../Script/indexStyleController.js"></script>
+    <script type="application/javascript" src="../Script/loginController.js"></script>
     <link rel="stylesheet" type="text/css" href="../Styles/indexStyle.css">
     <link rel="stylesheet" type="text/css" href="../Styles/indexStyle-footer.css">
     <link rel="stylesheet" type="text/css" href="../Styles/ice-music.css">
@@ -39,21 +40,27 @@
 
     </div>
     <div id="login-form">
-        <span>Login</span><br>
-        <form action="">
-            <input type="text" id="nameTxt" placeholder="Username or Email"><br>
-            <input type="password" id="passwordTxt" placeholder="Password"><br>
-            <div id="errorDiv"></div>
-            <input type="submit" value="Login">
-        </form>
+        <div id="login-head-div">
+            <span>Login</span><br>
+        </div>
+        <div id="login-form-div">
+            <form action="">
+                <input type="text" id="nameTxt" placeholder="Username or Email"><br>
+                <input type="password" id="passwordTxt" placeholder="Password"><br>
+            </form>
+        </div>
+        <div id="login-button-div">
+            <div id="errorDiv">err</div>
+            <button id="buttonSubmitLogin">Login</button>
+            <button>Forget Password</button>
 
-        <!--<button>Forget Password</button>-->
+        </div>
     </div>
 
     <div id="foot-bar">
         <div id="stop-div" class="inliner"></div>
         <audio id="myAudio" controls>
-        <source src="../Public/Songs/1.mp3" type="audio/mpeg">
+        <source src="" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio>
     </div>

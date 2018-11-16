@@ -1,16 +1,27 @@
-$(function () {
-    $("#foot-bar").hover(function () {
-        // $("#foot-bar").animate({bottom: "0%"}, "fast");
-        // console.log("in");
+function clearLoginForm() {
+    $("#nameTxt").val("");
+    $("#passwordTxt").val("");
+    $("#errorDiv").html("");
+}
 
-    },function () {
-        // console.log("out");
-        // $("#foot-bar").animate({bottom: "10%"}, "fast");
+function outLoginForm() {
+    $("#full-screen-div").css("display","none");
+    clearLoginForm();
+    $("#login-form").fadeOut("fast");
+}
+
+$(function () {
+    $("#buttonLogin").click(function () {
+        $("#full-screen-div").css("display","block");
+        clearLoginForm();
+        $("#login-form").fadeIn("fast");
     });
 
-
+    $("#full-screen-div").click(() => outLoginForm());
 
 
 
 });
+
+
 
