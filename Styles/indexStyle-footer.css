@@ -18,18 +18,6 @@
     cursor: pointer;
 }
 
-#stop-div{
-    width: 100%;
-    height: 80%;
-    max-width: 60px;
-    background-image: url("../Public/Images/stop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    margin-top: 5px;
-}
-
 .black-ground{
     background-color: dodgerblue;
 }

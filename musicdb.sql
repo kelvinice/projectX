@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Nov 2018 pada 18.25
+-- Waktu pembuatan: 17 Nov 2018 pada 06.42
 -- Versi server: 10.1.31-MariaDB
 -- Versi PHP: 7.2.4
 
@@ -154,6 +154,38 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
+(1, 'admin', 'admin@admin.com', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `user_session`
+--
+
+CREATE TABLE `user_session` (
+  `userid` int(11) NOT NULL,
+  `sessionid` varchar(50) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `user_session`
+--
+
+INSERT INTO `user_session` (`userid`, `sessionid`, `timestamp`) VALUES
+(1, '2728ff39-6c21-47b6-b479-3bad83bd6eb6', '2018-11-17 05:36:39'),
+(1, '39f33525-e360-43dc-9ded-ca2edf211403', '2018-11-17 05:38:10'),
+(1, '4c73e372-8234-4e92-8789-8833a7cc8', '2018-11-17 04:35:42'),
+(1, '808ef181-b7fd-45c6-bbe4-0bdf60e4a7ac', '2018-11-17 04:46:46'),
+(1, 'b748d71b-ecde-482d-9c2c-864d7dd1c', '2018-11-17 04:34:58'),
+(1, 'bc166dc6-f45e-4996-a738-91ca0f65d', '2018-11-17 04:32:17'),
+(1, 'f10f2f45-725a-4ed1-9ba8-0b2647277c9b', '2018-11-17 05:24:59');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -170,6 +202,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `user_session`
+--
+ALTER TABLE `user_session`
+  ADD PRIMARY KEY (`sessionid`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -183,7 +221,7 @@ ALTER TABLE `musics`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,8 +1,6 @@
 $(function () {
 
     function fetchData(test){
-        //console.log(test);
-
         var ajaxGetSong = $.ajax({
             url: "../Api/getSongs.php",
             method: "POST",

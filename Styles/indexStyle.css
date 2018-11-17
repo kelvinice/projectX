@@ -15,7 +15,6 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: crimson;
-    /*justify-content: space-between;*/
 }
 
 .playlist-header-contents:first-child{
@@ -37,20 +36,15 @@ body{
 }
 
 .playlist-body-content{
-    /*padding: 30px 0px;*/
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /*background-color: black;*/
     justify-content: flex-start;
     color: white;
     min-height: 50px;
-    /*border: 5px solid white;*/
-
 }
 .playlist-body-content-contents{
     /*min-height: 100px;*/
-
 }
 
 .playlist-body-content-contents:first-child{
@@ -72,10 +66,13 @@ body{
 .playlist-body-content-contents:nth-child(4){
     /*width: 50%;*/
     flex : 1;
-
 }
 
 #buttonLogin{
+    padding: 10px 15px;
+    float: right;
+}
+#buttonLogout{
     padding: 10px 15px;
     float: right;
 }

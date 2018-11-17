@@ -1,4 +1,40 @@
+function doLogout() {
+    sessionStorage.clear();
+    $("#buttonLogin").show();
+    $("#buttonLogout").hide();
+}
+
+function doLogin() {
+    $("#buttonLogin").hide();
+    $("#buttonLogout").show();
+}
+
+function verifyUser(){
+    if(sessionStorage.getItem('user_session')!= null){
+        var session_id = sessionStorage.getItem('user_session');
+        var ajaxVerify = $.ajax({
+            url: "../Api/doVerifyUser.php",
+            data: {
+                data1: session_id
+            },
+            method : "POST",
+        });
+
+        ajaxVerify.done(function (result) {
+            if(result.search("Error : ") != -1){
+                alert(result);
+                doLogout();
+            }else{
+                doLogin();
+            }
+        });
+    }else{
+        doLogout();
+    }
+}
+
 $(function () {
+    verifyUser();
     $("#buttonSubmitLogin").click(function (e) {
 
         var username = $("#nameTxt").val();
@@ -19,9 +55,18 @@ $(function () {
             });
 
             ajaxLogin.done(function (result) {
-                outLoginForm();
+                if(result == "fail"){
+                    $("#errorDiv").html("Wrong Login Data");
+                }else{
+                    sessionStorage.setItem('user_session',result);
+                    outLoginForm();
+                    doLogin();
+                }
 
             });
         }
     });
+    
+    $("#buttonLogout").click(() => doLogout());
+    
 });
