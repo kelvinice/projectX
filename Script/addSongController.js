@@ -11,6 +11,9 @@ $(function () {
             $("#errorDiv-file").html("Artist Must be filled");
         }else if($("#fileToUpload").prop('files').length > 0)
         {
+            $("#errorDiv-file").css("background-color","lightslategray");
+            $("#errorDiv-file").html('<div class="image-load"></div>');
+
             var file =  $("#fileToUpload").prop('files')[0];
             var formdata = new FormData();
             formdata.append("fileToUpload",file);
@@ -34,13 +37,9 @@ $(function () {
                 }
 
             });
-
-
         }else{
             $("#errorDiv-file").html("No File");
         }
-
-
     });
     
 });

@@ -10,12 +10,11 @@ $(function () {
             }
         });
 
-        var loadImg = document.createElement('div');
-        loadImg.id='image-load';
-        document.body.appendChild(loadImg);
+        $("#fetch-loading-div").show();
 
         ajaxGetSong.done(
             function (result) {
+                isFinish = true;
                 var tempHasil = JSON.parse(result);
                 if(tempHasil.length==0 && isFirst)$("#playlist-body").html(""); //barbar
                 for(var i=0;i<tempHasil.length;i++){
@@ -61,15 +60,19 @@ $(function () {
                     }
                     iteratorToogle=!iteratorToogle;
                     isFirst=false;
+
                 }
                 offset++;
-                loadImg.remove();
+
+                $("#fetch-loading-div").hide();
                 $(".play-div").click(function (event) {
+                    if(audio)audio.pause();
                     $("#foot-bar").animate({bottom: "0%"}, "fast");
                     audio = $("#myAudio")[0];
                     audio.src = "../Public/Songs/"+$(event.target).attr('value');
                     audio.play();
                 });
+
             }
         );
 
@@ -93,9 +96,13 @@ $(function () {
     });
 
     $(window).scroll(function() {
-        if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-            fetchData(offset);
+        if(isFinish){
+            if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+                isFinish = false;
+                fetchData(offset);
+            }
         }
+
     });
     fetchData(offset);
 
@@ -114,3 +121,4 @@ var offset=0;
 var iteratorToogle=true;
 var isFirst=true;
 var audio;
+var isFinish=true;

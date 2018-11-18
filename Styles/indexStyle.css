@@ -1,13 +1,27 @@
 body{
     margin: 0;
 }
-#image-load{
-    background-image: url("../Public/Images/giphy.gif");
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.image-load{
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    background-image: url("../Public/Images/loading.png");
     height: 100px;
     width: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: spinning 2s linear infinite;
 }
 
 #playlist-header{

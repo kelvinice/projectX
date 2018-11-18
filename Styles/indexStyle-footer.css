@@ -91,4 +91,7 @@
     background-color: lightpink;
     border-radius: 3px;
     margin-bottom: 5px;
+    text-align: center;
+    color: darkred;
+    font-weight: bolder;
 }
