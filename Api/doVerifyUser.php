@@ -6,7 +6,7 @@
  * Time: 11:53 AM
  */
 
-$con = new mysqli('localhost','root','','musicdb');
+require 'connect.php';
 
 $session_id = $_POST['data1'];
 

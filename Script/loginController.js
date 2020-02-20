@@ -2,11 +2,13 @@ function doLogout() {
     sessionStorage.clear();
     $("#buttonLogin").show();
     $("#buttonLogout").hide();
+    $("#buttonAddSong").hide();
 }
 
 function doLogin() {
     $("#buttonLogin").hide();
     $("#buttonLogout").show();
+    $("#buttonAddSong").show();
 }
 
 function verifyUser(){
@@ -59,6 +61,8 @@ $(function () {
                     $("#errorDiv").html("Wrong Login Data");
                 }else{
                     sessionStorage.setItem('user_session',result);
+                    $("#errorDiv").css("background-color","lightgreen");
+                    $("#errorDiv").html("Success Login...");
                     outLoginForm();
                     doLogin();
                 }

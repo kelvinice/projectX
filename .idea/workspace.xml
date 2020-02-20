@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22e08891-3b71-4bf0-85ae-68c489a692f7" name="Default Changelist" comment="plus lagu">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="22e08891-3b71-4bf0-85ae-68c489a692f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/addSongController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/addSongController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/indexController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/indexStyle-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/indexStyle-footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/indexStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/indexStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Views/index.html" afterDir="false" />
     </list>
     <list id="90e994e4-f513-4aa2-94fe-37b89659394b" name="udah bisa add song pakai ajax" comment="udah bisa add song pakai ajax">
       <change beforePath="$PROJECT_DIR$/Api/doLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/doLogin.php" afterDir="false" />
@@ -76,17 +70,17 @@
     <session id="-1316986099">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -95,7 +89,7 @@
           <entry key="html" value="559" />
           <entry key="js" value="2346" />
           <entry key="php" value="1385" />
-          <entry key="txt" value="218" />
+          <entry key="txt" value="236" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -104,7 +98,7 @@
           <entry key="HTML" value="559" />
           <entry key="JavaScript" value="2346" />
           <entry key="PHP" value="1385" />
-          <entry key="PLAIN_TEXT" value="218" />
+          <entry key="PLAIN_TEXT" value="236" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -219,7 +213,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Api/insertSong.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="221">
               <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
             </state>
           </provider>
@@ -228,7 +222,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Styles/indexStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="255">
               <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
@@ -316,50 +310,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Styles/indexStyle-footer.css">
-      <ranges>
-        <range start1="93" end1="93" start2="93" end2="96" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="94" end1="94" start2="97" end2="144" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Views/index.html">
-      <ranges>
-        <range start1="9" end1="9" start2="9" end2="10" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="17" end1="17" start2="18" end2="29" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="26" end1="27" start2="38" end2="39" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="67" end1="67" start2="79" end2="85" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Script/indexController.js">
-      <ranges>
-        <range start1="12" end1="15" start2="12" end2="13" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="18" end1="18" start2="16" end2="17" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="22" end1="23" start2="21" end2="22" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="24" end1="25" start2="23" end2="24" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="27" end1="28" start2="26" end2="28" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="30" end1="31" start2="30" end2="31" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="37" end1="38" start2="37" end2="38" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="47" end1="48" start2="47" end2="48" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="56" end1="57" start2="56" end2="57" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="63" end1="63" start2="63" end2="64" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="65" end1="66" start2="66" end2="68" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="67" end1="67" start2="69" end2="70" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="72" end1="72" start2="75" end2="76" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="87" end1="88" start2="91" end2="92" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-        <range start1="95" end1="97" start2="99" end2="104" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="98" end1="98" start2="105" end2="106" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="116" end1="116" start2="124" end2="125" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Styles/indexStyle.css">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="18" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="10" end1="10" start2="23" end2="24" changelist="22e08891-3b71-4bf0-85ae-68c489a692f7" />
-        <range start1="35" end1="35" start2="49" end2="50" changelist="90e994e4-f513-4aa2-94fe-37b89659394b" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
@@ -374,7 +324,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -412,13 +361,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="add&#9;FILE&#9;file://C:/xampp/htdocs/ProjectX/Script/addSongController.js&#10;indexs&#9;FILE&#9;file://C:/xampp/htdocs/ProjectX/Styles/indexStyle.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Laravel LAB/Laravel Projects pert 4/EmptyProject" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -477,7 +427,8 @@
       <workItem from="1542448635181" duration="2295000" />
       <workItem from="1542455636324" duration="11676000" />
       <workItem from="1542507620894" duration="5101000" />
-      <workItem from="1542554249487" duration="6237000" />
+      <workItem from="1542554249487" duration="6462000" />
+      <workItem from="1542633438752" duration="417000" />
     </task>
     <task id="LOCAL-00002" summary="coba">
       <created>1541953828787</created>
@@ -612,11 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542473971112</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="v0.1">
+      <created>1542562702793</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1542562702793</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85164000" />
+    <option name="totallyTimeSpent" value="85806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -629,9 +587,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2872493" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29154727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -643,9 +600,9 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928367" weight="0.32974428" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49641833" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.495702" visible="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49641833" weight="0.32974428" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50358164" side_tool="true" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.504298" side_tool="true" visible="true" weight="0.32974428" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.497851" visible="true" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -705,7 +662,8 @@
     <MESSAGE value="login kelar, pakai guid untuk generate session id" />
     <MESSAGE value="udah bisa add song pakai ajax" />
     <MESSAGE value="plus lagu" />
-    <option name="LAST_COMMIT_MESSAGE" value="plus lagu" />
+    <MESSAGE value="v0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
@@ -764,24 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/Views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Styles/indexStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Styles/indexStyle-footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+        <state relative-caret-position="1360">
+          <caret line="80" column="38" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -792,17 +736,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/index.html">
+    <entry file="file://$PROJECT_DIR$/Styles/indexStyle-footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="38" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
+        <state relative-caret-position="1734">
+          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/insertSong.php">
+    <entry file="file://$PROJECT_DIR$/Script/indexStyleController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -813,10 +757,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Script/indexStyleController.js">
+    <entry file="file://$PROJECT_DIR$/Api/insertSong.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="221">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Styles/indexStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>

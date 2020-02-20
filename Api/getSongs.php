@@ -6,11 +6,11 @@
  * Time: 13:54
  */
 
-$con = new mysqli('localhost','root','','musicdb');
+require 'connect.php';
 $offset = $_POST['data1']*10;
 $searchKey = $_POST['data2'];
 
-$stmt = $con->prepare("SELECT * FROM musics WHERE name like ? or path like ? LIMIT ? ,10");
+$stmt = $con->prepare("SELECT * FROM musics WHERE name like ? or artist like ? LIMIT ? ,10");
 $temp = '%'.$searchKey.'%';
 
 $stmt->bind_param("ssi",$temp,$temp,$offset);

@@ -47,6 +47,7 @@ body{
 .yellow-span{
     background-color: yellow;
     color: black;
+    border-radius: 3px;
 }
 
 .playlist-body-content{

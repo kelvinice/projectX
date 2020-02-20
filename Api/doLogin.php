@@ -7,8 +7,7 @@
  */
 
 require 'guidPHP.php';
-
-$con = new mysqli('localhost','root','','musicdb');
+require 'connect.php';
 
 $username = $_POST['data1'];
 $password = $_POST['data2'];

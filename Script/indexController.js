@@ -19,22 +19,23 @@ $(function () {
                 if(tempHasil.length==0 && isFirst)$("#playlist-body").html(""); //barbar
                 for(var i=0;i<tempHasil.length;i++){
                     var name = tempHasil[i]["name"];
-                    var n = name.search(searchKey);
+                    var n = name.toLowerCase().search(searchKey);
                     if(n!=-1 && searchKey != ''){
-                        name = name.substring(0, n)+'<span class="yellow-span">'+searchKey+'</span>'+name.substring(n+searchKey.length, name.length);
+                        name = name.substring(0, n)+'<span class="yellow-span">'+name.substring(n, n+searchKey.length)+'</span>'+name.substring(n+searchKey.length, name.length);
                     }
                     var path = tempHasil[i]["path"];
-                    n = path.search(searchKey);
+                    var artist = tempHasil[i]["artist"];
+                    n = artist.toLowerCase().search(searchKey);
 
                     if(n!=-1 && searchKey != ''){
-                        path = path.substring(0, n)+'<span class="yellow-span">'+searchKey+'</span>'+path.substring(n+searchKey.length, path.length);
+                        artist = artist.substring(0, n)+'<span class="yellow-span">'+artist.substring(n, n+searchKey.length)+'</span>'+artist.substring(n+searchKey.length, artist.length);
                     }
                     if(isFirst){
                         $("#playlist-body").html(
                             '<div class="playlist-body-content black-ground">'+
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
-                            '<div class="playlist-body-content-contents">'+path+'</div>'+
+                            '<div class="playlist-body-content-contents">'+artist+'</div>'+
                             '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["path"]+'"></div></div>'+
                             "</div>"
                         );
@@ -44,7 +45,7 @@ $(function () {
                             '<div class="playlist-body-content black-ground">'+
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
-                            '<div class="playlist-body-content-contents">'+path+'</div>'+
+                            '<div class="playlist-body-content-contents">'+artist+'</div>'+
                             '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["path"]+'"></div></div>'+
                             "</div>"
                         );
@@ -53,7 +54,7 @@ $(function () {
                             '<div class="playlist-body-content gray-ground">'+
                             '<div class="playlist-body-content-contents">'+tempHasil[i]["id"]+'</div>'+
                             '<div class="playlist-body-content-contents">'+name+'</div>'+
-                            '<div class="playlist-body-content-contents">'+path+'</div>'+
+                            '<div class="playlist-body-content-contents">'+artist+'</div>'+
                             '<div class="playlist-body-content-contents"><div class="play-div" value="'+tempHasil[i]["path"]+'"></div></div>'+
                             "</div>"
                         );
@@ -88,7 +89,7 @@ $(function () {
     });
 
     $("#searchTxt").keyup(function () {
-        searchKey = $("#searchTxt").val();
+        searchKey = $("#searchTxt").val().trim();
         offset=0;
         isFirst = true;
         iteratorToogle = true;

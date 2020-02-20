@@ -7,6 +7,7 @@
     <script type="application/javascript" src="../Script/indexController.js"></script>
     <script type="application/javascript" src="../Script/indexStyleController.js"></script>
     <script type="application/javascript" src="../Script/loginController.js"></script>
+    <script type="application/javascript" src="../Script/addSongController.js"></script>
     <link rel="stylesheet" type="text/css" href="../Styles/indexStyle.css">
     <link rel="stylesheet" type="text/css" href="../Styles/indexStyle-footer.css">
     <link rel="stylesheet" type="text/css" href="../Styles/ice-music.css">
@@ -15,6 +16,17 @@
     <!--<button id="fetchButton">Fetch</button>-->
     <button id="buttonLogin">Login</button>
     <button id="buttonLogout">Logout</button>
+    <button id="buttonAddSong">Add Song</button>
+    <div id="addSongField">
+        <form action="../Api/insertSong.php" method="post" enctype="multipart/form-data" id="form-add-song">
+            <input type="text" name="songNameTxt" id="songNameTxt" placeholder="Song Name"><br>
+            <input type="text" name="artistTxt" id="artistTxt" placeholder="Artist"><br>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <div id="errorDiv-file">err</div>
+            <input type="submit" id="submit" name="submit">
+        </form>
+    </div>
+
     Filter
     <form action="" method="get" id="filter-form">
         <input type="text" name="searchTxt" id="searchTxt"><br>
@@ -24,7 +36,7 @@
         <div id="playlist-header">
             <div class="playlist-header-contents">Id</div>
             <div class="playlist-header-contents">Name</div>
-            <div class="playlist-header-contents">Path</div>
+            <div class="playlist-header-contents">Artist</div>
             <div class="playlist-header-contents"></div>
         </div>
         <div id="playlist-body">
